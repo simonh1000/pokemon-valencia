@@ -12,7 +12,7 @@ function convertToCsv(lst) {
 function convertRowCsv(acc, s) {
     const elems = s.split("\t");
     if (elems[1]) {
-      return (acc + `${elems[0]}, ${elems[1]}, ${elems[2]}\n`);
+      return (acc + `'${elems[0].trim()}', ${elems[1]}, ${elems[2]}\n`);
     } else {
         return acc;
     }

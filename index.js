@@ -12,7 +12,7 @@ Parque Emilio Lluch
 Gulliver Pano
 Macmax Sin Desayunar
 Olea Europeae
-El Perro, Valencia
+"El Perro, Valencia"
 Fuente Con Cara
 Black Face
 Fuente de las Sirenas meninas
@@ -21,7 +21,7 @@ parque virgen del castillo
 Parque de los puentes
 El De La Sidra
 Escultura a Ausias March
-Jardín de las Hespérides, Vale
+"Jardín de las Hespérides, Vale"
 Gusano Punkercito
 Águila En El Tejado
 Fuentecilla
@@ -46,7 +46,7 @@ const dataToSave = lst.split("\n").reduce((acc, name) => {
     let gym = gyms[matches.bestMatch.target];
 
     if (matches.bestMatch.rating > 0.8) {
-        return acc + `${matches.bestMatch.target}, ${gym.lat}, ${gym.lng}\n`;
+        return acc + `"${matches.bestMatch.target}", ${gym.lat}, ${gym.lng}\n`;
     } else {
         ct++;
         console.log(
